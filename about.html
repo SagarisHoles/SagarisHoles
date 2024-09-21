@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilon Rudkovskyi</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="background"></div> <!-- Фон вынесен в отдельный элемент -->
+    
+<header id="Menu">
+    <div id="logo">Sagaris Holes</div>
+    <nav id="main-nav">
+        <a href="index.html">Новости</a>
+        <a href="about.html">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+    <button id="menu-toggle">&#9776;</button>
+</header>
+
+
+    <div class="news-container">
+        <div class="news-item">
+            <div class="news-content">
+                <p id="intro">Космическое путешествие начинается здесь</p>
+            </div>
+            <div id="intro" class="news-caption">Sagaris Holes</div>
+        </div>
+            <div class="news-item">
+            <div class="news-content">
+                    <div class="carousel-container">
+    <div class="carousel-item">
+        <img src="/images/carusel1.jpg" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/carusel2.jpg" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/carusel3.jpg" alt="Image 3">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/carusel4.jpg" alt="Image 4">
+    </div>
+    <div class="carousel-item">
+        <img src="/images/carusel5.jpg" alt="Image 5">
+    </div>
+</div>
+
+            </div>
+        </div>
+            <div id="countercont" class="news-item">
+            <div class="news-content">
+                <h2 id="countercont">Наши достижения</h2>
+<div class="counter-container">
+    <div class="counter" data-target="124503">
+        <p>Круизов на суперяхтах</p>
+        <div class="count-value">0</div>
+    </div>
+    <div class="counter" data-target="19456">
+        <p>Исследовано космических тел</p>
+        <div class="count-value">0</div>
+    </div>
+    <div class="counter" data-target="148">
+        <p>Наш флот</p>
+        <div class="count-value">0</div>
+    </div>
+</div>
+
+            </div>
+        </div>
+<div class="news-item">
+    <div class="news-content">
+        <h2 id="intro">Кто организует твой отдых?</h2>
+        <!-- Первый ряд с двумя карточками -->
+        <div class="row">
+            <div class="card">
+                <img src="/images/p1.jpg" alt="Фото сотрудника">
+                <h3>Jameson Erhardt</h3>
+                <p class="position">CEO</p>
+                <p class="position-description">Руководит всем процессом</p>
+            </div>
+            <div class="card">
+                <img src="/images/p3.jpg" alt="Фото сотрудника">
+                <h3>Aleira Voss</h3>
+                <p class="position">Director of development department</p>
+                <p class="position-description">Заботится о том что бы каждый раз ощущался как первый</p>
+            </div>
+            <div class="card">
+                <img src="/images/p5.jpg" alt="Фото сотрудника">
+                <h3>Lena Axton</h3>
+                <p class="position">Director of travel department</p>
+                <p class="position-description">Организует вашу посадку и подберёт незабываемый маршрут</p>
+            </div>
+        </div>
+
+        <!-- Второй ряд с двумя карточками -->
+        <div class="row">
+            <div class="card">
+                <img src="/images/p7.jpg" alt="Фото сотрудника">
+                <h3>Elar Stoker</h3>
+                <p class="position">Director of technical department</p>
+                <p class="position-description">Следит за тем что бы флот был словно только с верфи</p>
+            </div>
+            <div class="card">
+                <img src="/images/p8.jpg" alt="Фото сотрудника">
+                <h3>Orion Thane</h3>
+                <p class="position">Director of safety department</p>
+                <p class="position-description">Заведует отделом который стоит на страже твоего отдыха</p>
+            </div>
+            <div class="card">
+                <img src="/images/p6.jpg" alt="Фото сотрудника">
+                <h3>Hadrian Colt</h3>
+                <p class="position">Director of flight coordination department</p>
+                <p class="position-description">Находит самые короткие пути к интересным местам</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="news-item">
+            <div id="contact" class="news-content">
+                <h2 id="contacts" id="intro">Связь с нами</h2>
+<div class="button-container">
+        <a href="mailto:ilon.rudkovsky@gmail.com" class="button">
+            <img src="/images/order.svg" alt="Order Icon">
+            Чартер и бронь
+        </a>
+        <a href="mailto:ilon.rudkovsky@gmail.com" class="button">
+            <img src="/images/cooperate.svg" alt="Cooperate Icon">
+            Сотрудничество
+        </a>
+        <a href="mailto:ilon.rudkovsky@gmail.com" class="button">
+            <img src="/images/work.svg" alt="Work Icon">
+            Вакансии
+        </a>
+            </div>
+<div class="galaxy-card galaxy-border-orange">
+    <div class="galaxy-card-body">
+        <img src="/images/galaxyBackgroundV2.jpg" alt="Galaxy Background" class="galaxy-image">
+        <button class="galaxy-button"></button> <!-- Кнопка -->
+    </div>
+</div>
+            <div class="news-caption">Sagaris Holes</div>
+        </div>
+    </div>
+
+    <script>
+        // Для скрытия и показа меню на мобильных устройствах
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('main-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    </script>
+    <script>
+        const carouselItems = document.querySelectorAll('.carousel-item');
+
+        window.addEventListener('scroll', () => {
+            carouselItems.forEach((item) => {
+                const rect = item.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                if (rect.top >= 0 && rect.bottom <= windowHeight) {
+                    item.querySelector('img').style.transform = 'scale(1.2)';
+                } else {
+                    item.querySelector('img').style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('#countercont .counter'); // Все счетчики внутри контейнера
+    const container = document.getElementById('countercont'); // Контейнер с id="countercont"
+    let animated = false; // Флаг для проверки выполнения анимации
+
+    const animateCounters = () => {
+        if (animated) return; // Если анимация уже выполнена, выходим
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target'); // Целевое значение
+            let count = 0; // Начальное значение
+            const increment = Math.ceil(target / 200); // Скорость увеличения
+
+            const updateCount = () => {
+                count = Math.min(count + increment, target); // Увеличиваем значение
+                counter.querySelector('.count-value').innerText = count; // Обновляем текст
+
+                if (count < target) {
+                    requestAnimationFrame(updateCount); // Плавная анимация
+                } else {
+                    counter.querySelector('.count-value').innerText = target; // Финальное значение
+                }
+            };
+
+            updateCount(); // Запуск анимации
+        });
+
+        animated = true; // Устанавливаем флаг, чтобы избежать повторной анимации
+    };
+
+    const handleScroll = () => {
+        const rect = container.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        // Если контейнер виден на экране
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+            animateCounters();
+        }
+    };
+
+    // Запуск анимации при скролле (когда контейнер становится виден)
+    window.addEventListener('scroll', handleScroll);
+
+    // Запуск анимации при наведении мышкой на контейнер
+    container.addEventListener('mouseenter', () => animateCounters());
+
+    // Запуск проверки при загрузке страницы
+    handleScroll();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
